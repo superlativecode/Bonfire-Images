@@ -5,7 +5,7 @@ A simple images module. This is not a standalone module and should be used with 
 
 ###Dependices not included
 
-*   [Bonfire](https://github.com/ci-bonfire/Bonfire) by [Superlative Code](http://superlativecode.com/)
+*   [Bonfire](https://github.com/ci-bonfire/Bonfire)
 
 ###Installation
 
