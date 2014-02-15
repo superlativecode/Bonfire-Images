@@ -3,7 +3,7 @@ Bonfire Images
 
 A simple images module. This is not a standalone module and should be used with [Bonfire-Blog](https://github.com/superlativecode/Bonfire-Blog) or intergrate it into your own bonfire modules.
 
-###Dependices not included
+###Dependancies not included
 
 *   [Bonfire](https://github.com/ci-bonfire/Bonfire)
 
