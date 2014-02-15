@@ -41,7 +41,7 @@ class Migration_Install_images extends Migration
 	{
 		$this->dbforge->add_field($this->fields);
 		$this->dbforge->add_key('id', true);
-		$this->dbforge->create_table2($this->table_name);
+		$this->dbforge->create_table($this->table_name);
 	}
 
 	//--------------------------------------------------------------------

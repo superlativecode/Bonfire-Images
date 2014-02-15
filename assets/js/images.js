@@ -13,6 +13,7 @@ Dropzone.options.myAwesomeDropzone = {
         formData.append('images_ext', file.name);
     },
     success : function(file, res) {
+        console.log(res);
         res = $.parseJSON(res);
         if(!res.success){
             alert(res.msg);
