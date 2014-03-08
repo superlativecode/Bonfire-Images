@@ -13,12 +13,18 @@ Dropzone.options.myAwesomeDropzone = {
         formData.append('images_ext', file.name);
     },
     success : function(file, res) {
-        console.log(res);
-        res = $.parseJSON(res);
+        try {
+            json = $.parseJSON(res);
+        } catch(e){
+            console.log('Invalid JSON');
+            console.log(res);
+            return;
+        }
         if(!res.success){
-            alert(res.msg);
+        if(!json.success){
+            alert(json.msg);
         }else{
-            $('#images_list').append(res.new_image_row);
+            $('#images_list').append(json.new_image_row);
             $('#images_empty').remove();
             window.onbeforeunload = function(){ return "Please save the post before leaving. Images may not be properly attached."; }
             init_stuff();
